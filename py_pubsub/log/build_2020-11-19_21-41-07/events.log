@@ -1,0 +1,56 @@
+[0.000000] (-) TimerEvent: {}
+[0.001130] (py_pubsub) JobQueued: {'identifier': 'py_pubsub', 'dependencies': OrderedDict()}
+[0.001239] (py_pubsub) JobStarted: {'identifier': 'py_pubsub'}
+[0.104551] (-) TimerEvent: {}
+[0.206145] (-) TimerEvent: {}
+[0.310962] (-) TimerEvent: {}
+[0.411449] (-) TimerEvent: {}
+[0.490220] (py_pubsub) Command: {'cmd': ['/usr/local/opt/python@3.8/bin/python3.8', 'setup.py', 'egg_info', '--egg-base', 'build/py_pubsub', 'build', '--build-base', '/Users/martinwhite/dev_ws/src/py_pubsub/build/py_pubsub/build', 'install', '--prefix', '/Users/martinwhite/dev_ws/src/py_pubsub/install/py_pubsub', '--record', '/Users/martinwhite/dev_ws/src/py_pubsub/build/py_pubsub/install.log', '--single-version-externally-managed'], 'cwd': '/Users/martinwhite/dev_ws/src/py_pubsub', 'env': {'CPLUS_INCLUDE_PATH': '/usr/local/include:', 'TERM_PROGRAM': 'Apple_Terminal', 'SSL_CERT_FILE': '/usr/local/etc/openssl/certs/cert.pem', 'TERM': 'xterm-256color', 'SHELL': '/bin/bash', 'TMPDIR': '/var/folders/26/7jl9b_y56xj72b_w9h_9c7y00000gn/T/', 'Apple_PubSub_Socket_Render': '/private/tmp/com.apple.launchd.re8wdoAQmF/Render', 'LIBRARY_PATH': '/opt/local/lib', 'TERM_PROGRAM_VERSION': '421.2', 'FRC_PATH': '/Users/martinwhite/frc', 'ROS_PYTHON_VERSION': '3', 'TERM_SESSION_ID': '1455EF98-85B0-4EE0-9D7D-DA81DAFB324F', 'PERL_MB_OPT': '--install_base "/Users/martinwhite/perl5"', 'COLCON_PREFIX_PATH': '/Users/martinwhite/dev_ws/install:/Users/martinwhite/ros2_foxy/ros2-osx', 'ROS_VERSION': '2', 'AMENT_PREFIX_PATH': '/Users/martinwhite/dev_ws/install/turtlesim:/Users/martinwhite/dev_ws/install/my_package:/Users/martinwhite/ros2_foxy/ros2-osx', 'USER': 'martinwhite', 'SSH_AUTH_SOCK': '/private/tmp/com.apple.launchd.IeOZnRQw3F/Listeners', 'CPATH': '/opt/local/include', '__CF_USER_TEXT_ENCODING': '0x1F5:0x0:0x0', 'PUBKEYPATH': '/Users/martinwhite/.ssh/id_rsa.pub', 'PATH': '/usr/local/sbin:/usr/local/opt/python@3.8/bin:/opt/local/bin:/opt/local/sbin:/Users/martinwhite/ros2_foxy/ros2-osx/bin:/usr/local/bin:/opt/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/mysql/bin:/usr/local/rabbitmq_server-3.3.2/sbin:/opt/X11/bin:/Applications/Wireshark.app/Contents/MacOS:/Users/martinwhite/.rvm/bin:/Users/martinwhite/.platformio/penv/bin:/Users/martinwhite/.platformio/packages/toolchain-xtensa32/bin:/usr/local/opt/qt/bin', 'PWD': '/Users/martinwhite/dev_ws/src/py_pubsub/build/py_pubsub', 'COLCON': '1', 'JAVA_HOME': '/Users/martinwhite/wpilib/2020/jdk', 'LANG': 'en_US.UTF-8', 'XPC_FLAGS': '0x0', 'XPC_SERVICE_NAME': '0', 'HOME': '/Users/martinwhite', 'SHLVL': '2', 'OPENSSL_ROOT_DIR': '/usr/local/opt/openssl@1.1', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'martinwhite', 'PYTHONPATH': '/Users/martinwhite/dev_ws/src/py_pubsub/install/py_pubsub/lib/python3.8/site-packages:/Users/martinwhite/dev_ws/install/turtlesim/lib/python3.8/site-packages:/Users/martinwhite/ros2_foxy/ros2-osx/lib/python3.8/site-packages:/usr/local/lib/python3.8/site-packages/', 'ML_PATH': '/Users/martinwhite/ml', 'PKG_CONFIG_PATH': '/Users/martinwhite/ros2_foxy/ros2-osx/lib/pkgconfig', 'MYSQL_HOME': '/usr/local/mysql', 'DISPLAY': '/private/tmp/com.apple.launchd.rtRgC7bWEm/org.macosforge.xquartz:0', 'CMAKE_PREFIX_PATH': '/Users/martinwhite/dev_ws/install/turtlesim:/Users/martinwhite/dev_ws/install/my_package:/Users/martinwhite/ros2_foxy/ros2-osx::/usr/local/opt/qt', 'JRUBY_OPTS': '-Xcext.enabled=true', 'ROS_LOCALHOST_ONLY': '0', 'SECURITYSESSIONID': '186a8', 'PERL_MM_OPT': 'INSTALL_BASE=/Users/martinwhite/perl5', '_': '/usr/bin/env'}, 'shell': False}
+[0.511872] (-) TimerEvent: {}
+[0.612465] (-) TimerEvent: {}
+[0.712744] (-) TimerEvent: {}
+[0.813777] (-) TimerEvent: {}
+[0.875133] (py_pubsub) StdoutLine: {'line': b'running egg_info\n'}
+[0.875948] (py_pubsub) StdoutLine: {'line': b'creating build/py_pubsub/py_pubsub.egg-info\n'}
+[0.876316] (py_pubsub) StdoutLine: {'line': b'writing build/py_pubsub/py_pubsub.egg-info/PKG-INFO\n'}
+[0.876712] (py_pubsub) StdoutLine: {'line': b'writing dependency_links to build/py_pubsub/py_pubsub.egg-info/dependency_links.txt\n'}
+[0.877049] (py_pubsub) StdoutLine: {'line': b'writing entry points to build/py_pubsub/py_pubsub.egg-info/entry_points.txt\n'}
+[0.877453] (py_pubsub) StdoutLine: {'line': b'writing requirements to build/py_pubsub/py_pubsub.egg-info/requires.txt\n'}
+[0.877626] (py_pubsub) StdoutLine: {'line': b'writing top-level names to build/py_pubsub/py_pubsub.egg-info/top_level.txt\n'}
+[0.877888] (py_pubsub) StdoutLine: {'line': b"writing manifest file 'build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'\n"}
+[0.913860] (-) TimerEvent: {}
+[0.918061] (py_pubsub) StdoutLine: {'line': b"reading manifest file 'build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'\n"}
+[0.919727] (py_pubsub) StdoutLine: {'line': b"writing manifest file 'build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'\n"}
+[0.920245] (py_pubsub) StdoutLine: {'line': b'running build\n'}
+[0.920981] (py_pubsub) StdoutLine: {'line': b'running build_py\n'}
+[0.921706] (py_pubsub) StdoutLine: {'line': b'creating /Users/martinwhite/dev_ws/src/py_pubsub/build/py_pubsub/build\n'}
+[0.922322] (py_pubsub) StdoutLine: {'line': b'creating /Users/martinwhite/dev_ws/src/py_pubsub/build/py_pubsub/build/lib\n'}
+[0.922576] (py_pubsub) StdoutLine: {'line': b'creating /Users/martinwhite/dev_ws/src/py_pubsub/build/py_pubsub/build/lib/py_pubsub\n'}
+[0.922942] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/__init__.py -> /Users/martinwhite/dev_ws/src/py_pubsub/build/py_pubsub/build/lib/py_pubsub\n'}
+[0.923138] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/publisher_member_function.py -> /Users/martinwhite/dev_ws/src/py_pubsub/build/py_pubsub/build/lib/py_pubsub\n'}
+[0.923514] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/subscriber_member_function.py -> /Users/martinwhite/dev_ws/src/py_pubsub/build/py_pubsub/build/lib/py_pubsub\n'}
+[0.923723] (py_pubsub) StdoutLine: {'line': b'running install\n'}
+[0.923913] (py_pubsub) StdoutLine: {'line': b'running install_lib\n'}
+[0.925493] (py_pubsub) StdoutLine: {'line': b'creating /Users/martinwhite/dev_ws/src/py_pubsub/install/py_pubsub/lib/python3.8/site-packages/py_pubsub\n'}
+[0.925850] (py_pubsub) StdoutLine: {'line': b'copying /Users/martinwhite/dev_ws/src/py_pubsub/build/py_pubsub/build/lib/py_pubsub/__init__.py -> /Users/martinwhite/dev_ws/src/py_pubsub/install/py_pubsub/lib/python3.8/site-packages/py_pubsub\n'}
+[0.926274] (py_pubsub) StdoutLine: {'line': b'copying /Users/martinwhite/dev_ws/src/py_pubsub/build/py_pubsub/build/lib/py_pubsub/publisher_member_function.py -> /Users/martinwhite/dev_ws/src/py_pubsub/install/py_pubsub/lib/python3.8/site-packages/py_pubsub\n'}
+[0.926786] (py_pubsub) StdoutLine: {'line': b'copying /Users/martinwhite/dev_ws/src/py_pubsub/build/py_pubsub/build/lib/py_pubsub/subscriber_member_function.py -> /Users/martinwhite/dev_ws/src/py_pubsub/install/py_pubsub/lib/python3.8/site-packages/py_pubsub\n'}
+[0.927671] (py_pubsub) StdoutLine: {'line': b'byte-compiling /Users/martinwhite/dev_ws/src/py_pubsub/install/py_pubsub/lib/python3.8/site-packages/py_pubsub/__init__.py to __init__.cpython-38.pyc\n'}
+[0.928313] (py_pubsub) StdoutLine: {'line': b'byte-compiling /Users/martinwhite/dev_ws/src/py_pubsub/install/py_pubsub/lib/python3.8/site-packages/py_pubsub/publisher_member_function.py to publisher_member_function.cpython-38.pyc\n'}
+[0.929743] (py_pubsub) StdoutLine: {'line': b'byte-compiling /Users/martinwhite/dev_ws/src/py_pubsub/install/py_pubsub/lib/python3.8/site-packages/py_pubsub/subscriber_member_function.py to subscriber_member_function.cpython-38.pyc\n'}
+[0.931095] (py_pubsub) StdoutLine: {'line': b'running install_data\n'}
+[0.933521] (py_pubsub) StdoutLine: {'line': b'creating /Users/martinwhite/dev_ws/src/py_pubsub/install/py_pubsub/share/ament_index\n'}
+[0.934118] (py_pubsub) StdoutLine: {'line': b'creating /Users/martinwhite/dev_ws/src/py_pubsub/install/py_pubsub/share/ament_index/resource_index\n'}
+[0.934862] (py_pubsub) StdoutLine: {'line': b'creating /Users/martinwhite/dev_ws/src/py_pubsub/install/py_pubsub/share/ament_index/resource_index/packages\n'}
+[0.935210] (py_pubsub) StdoutLine: {'line': b'copying resource/py_pubsub -> /Users/martinwhite/dev_ws/src/py_pubsub/install/py_pubsub/share/ament_index/resource_index/packages\n'}
+[0.935542] (py_pubsub) StdoutLine: {'line': b'copying package.xml -> /Users/martinwhite/dev_ws/src/py_pubsub/install/py_pubsub/share/py_pubsub\n'}
+[0.935840] (py_pubsub) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.939557] (py_pubsub) StdoutLine: {'line': b'Copying build/py_pubsub/py_pubsub.egg-info to /Users/martinwhite/dev_ws/src/py_pubsub/install/py_pubsub/lib/python3.8/site-packages/py_pubsub-0.0.0-py3.8.egg-info\n'}
+[0.945858] (py_pubsub) StdoutLine: {'line': b'running install_scripts\n'}
+[0.995628] (py_pubsub) StdoutLine: {'line': b'Installing listener script to /Users/martinwhite/dev_ws/src/py_pubsub/install/py_pubsub/lib/py_pubsub\n'}
+[0.996149] (py_pubsub) StdoutLine: {'line': b'Installing talker script to /Users/martinwhite/dev_ws/src/py_pubsub/install/py_pubsub/lib/py_pubsub\n'}
+[0.997022] (py_pubsub) StdoutLine: {'line': b"writing list of installed files to '/Users/martinwhite/dev_ws/src/py_pubsub/build/py_pubsub/install.log'\n"}
+[1.014057] (-) TimerEvent: {}
+[1.027565] (py_pubsub) CommandEnded: {'returncode': 0}
+[1.086062] (py_pubsub) JobEnded: {'identifier': 'py_pubsub', 'rc': 0}
+[1.087457] (-) EventReactorShutdown: {}
