@@ -3,24 +3,28 @@
 This is the PC side of the Rover project.  The git PC directory source of this project resides at `~/dev_ws/src/RoverPC` and gets mounted into a docker container.
 
 ## Install ROS2 on Jetson
-Make sure that docker is installed first and then:
+Make sure that docker is installed first and then use the docker image [jetbot_ros](github.com/dusty-nv/jetbot_ros)
 
-    docker pull dustynv/ros:humble-ros-base-l4t-r34.1.1
+
+    cd ~
+    git clone https://github.com/dusty-nv/jetbot_ros
+    cd jetbot_ros
+    docker/run.sh
+
+This will download the docker image the first time.
 
 Create a workspace directory:
 
     mkdir dev_ws/src
 
-Create script to start the container.  Call the script `docker_ros2_run.sh`:
+Edit the script `~/jetbot_ros/docker/run.sh `that starts the container, and add the following line:
 
-    sudo docker run --runtime nvidia -it --rm \
-        --network host \
-        -e DISPLAY=$DISPLAY \
-        -v /dev_ws fbf14ddb1704
+    -v $HOME/dev_ws:/dev_ws \
 
-Start the container:
+Stop and restart the container by exiting the container and then:
 
-    ./docker_ros2_run.sh
+    cd ~/jetbot_ros
+    docker/run.sh
 
 There will be a directory `/dev_ws` where you can create your packages and they will persist across container restarts.    
 
@@ -29,10 +33,13 @@ Test:
     ros2 run demo_nodes_py talker
     ros2 run demo_nodes_py listener
 
-Create a package:
+Launch Gazebo:
 
-    cd src
-    ros2 pkg create --build-type ament_python rover_bringup
+    ros2 launch jetbot_ros gazebo_world.launch.py
+
+Launch a new terminal session into the container:
+
+    sudo docker exec -it jetbot_ros /bin/bash      
 
 Build a single package:
 
@@ -43,11 +50,17 @@ Build a single package:
 To clone this repository and use it in the docker ROS2 container.  At the command line outside of the container:
 
     cd ~/dev_ws/src
-    git clone 
+    git clone https://github.com/mjwhite8119/RoverPC.git
 
 This will show up within the docker container.  From within the docker container:
 
-    cd dev_ws/src
+    cd dev_ws
     colon build --symlink-install
+
+This will create the directories `build, install`, and `log`.  Note that these directories should be at the same level as the `src` directory.  
     
-### Run
+### Launch Rviz
+
+First source the built environment:
+
+    source install/setup.bash
