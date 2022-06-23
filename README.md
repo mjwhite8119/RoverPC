@@ -32,11 +32,7 @@ Test:
 
     ros2 run demo_nodes_py talker
     ros2 run demo_nodes_py listener
-
-Launch Gazebo:
-
-    ros2 launch jetbot_ros gazebo_world.launch.py
-
+    
 Launch a new terminal session into the container:
 
     sudo docker exec -it jetbot_ros /bin/bash      
@@ -44,6 +40,16 @@ Launch a new terminal session into the container:
 Build a single package:
 
     colcon build --packages-select rover_teleop --symlink-install
+
+To launch an empty world in Gazebo:
+
+    ros2 launch gazebo_ros gazebo.launch.py
+
+To launch the Jetbo model in Gazebo:
+
+    ros2 launch jetbot_ros gazebo_world.launch.py
+
+
 
 ### Clone Repository and Compile
 
