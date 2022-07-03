@@ -2,6 +2,22 @@
 
 This is the PC side of the Rover project.  The git PC directory source of this project resides at `~/dev_ws/src/RoverPC` and gets mounted into a docker container.
 
+## Setup on ROS PC
+
+Start the container in detached mode:
+
+    xhost +local:root
+    ./start_navigation
+
+Connect to container and source the environment:
+
+    ./attach_navigation
+    source /opt/ros/foxy/setup.bash
+
+Test with:
+
+    ros2 run demo_nodes_py listener
+
 ## Install ROS2 on Jetson
 Make sure that docker is installed first and then use the docker image [jetbot_ros](github.com/dusty-nv/jetbot_ros)
 
