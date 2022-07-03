@@ -9,11 +9,8 @@ import rclpy
 from geometry_msgs.msg import Twist
 from rclpy.qos import QoSProfile
 
-if os.name == 'nt':
-    import msvcrt
-else:
-    import termios
-    import tty
+import termios
+import tty
 
 BURGER_MAX_LIN_VEL = 0.9
 BURGER_MAX_ANG_VEL = 2.84
