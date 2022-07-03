@@ -15,16 +15,11 @@ else:
     import termios
     import tty
 
-BURGER_MAX_LIN_VEL = 0.22
+BURGER_MAX_LIN_VEL = 0.9
 BURGER_MAX_ANG_VEL = 2.84
-
-WAFFLE_MAX_LIN_VEL = 0.26
-WAFFLE_MAX_ANG_VEL = 1.82
 
 LIN_VEL_STEP_SIZE = 0.01
 ANG_VEL_STEP_SIZE = 0.1
-
-TURTLEBOT3_MODEL = os.environ['TURTLEBOT3_MODEL']
 
 msg = """
 Control Your TurtleBot3!
@@ -34,8 +29,8 @@ Moving around:
    a    s    d
         x
 
-w/x : increase/decrease linear velocity (Burger : ~ 0.22, Waffle and Waffle Pi : ~ 0.26)
-a/d : increase/decrease angular velocity (Burger : ~ 2.84, Waffle and Waffle Pi : ~ 1.82)
+w/x : increase/decrease linear velocity (Rover : ~ 0.9)
+a/d : increase/decrease angular velocity (Rover : ~ 2.84)
 
 space key, s : force stop
 
@@ -90,17 +85,11 @@ def constrain(input_vel, low_bound, high_bound):
 
 
 def check_linear_limit_velocity(velocity):
-    if TURTLEBOT3_MODEL == 'burger':
-        return constrain(velocity, -BURGER_MAX_LIN_VEL, BURGER_MAX_LIN_VEL)
-    else:
-        return constrain(velocity, -WAFFLE_MAX_LIN_VEL, WAFFLE_MAX_LIN_VEL)
+    return constrain(velocity, -BURGER_MAX_LIN_VEL, BURGER_MAX_LIN_VEL)
 
 
 def check_angular_limit_velocity(velocity):
-    if TURTLEBOT3_MODEL == 'burger':
-        return constrain(velocity, -BURGER_MAX_ANG_VEL, BURGER_MAX_ANG_VEL)
-    else:
-        return constrain(velocity, -WAFFLE_MAX_ANG_VEL, WAFFLE_MAX_ANG_VEL)
+    return constrain(velocity, -BURGER_MAX_ANG_VEL, BURGER_MAX_ANG_VEL)
 
 
 def main():
